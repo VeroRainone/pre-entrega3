@@ -1,0 +1,334 @@
+/* ----TIPOGRAFIA--- */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.typo-externa {
+  font-family: 'Pacifico', cursive; }
+
+/* --RESETEO-- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+/* ---HEADER---  */
+.header {
+  min-height: 20vh;
+  background-image: url("../recursos/olas mar header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.header img {
+  width: 140px;
+  height: 130px; }
+
+.navbar-collapse {
+  flex-direction: row-reverse; }
+
+.nav-link {
+  color: black;
+  font-weight: bold; }
+
+.nav-link:hover {
+  color: blue; }
+
+.navbar-toggler:focus {
+  box-shadow: none; }
+
+/* MAIN */
+.main-height {
+  min-height: 70vh; }
+
+.margin {
+  margin: 15px; }
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 7px 40px;
+  box-shadow: 6px 7px 4px gray; }
+
+/* MAIN INICIO */
+.ancho-banner {
+  width: 100% 100%; }
+
+.ancho-banner img {
+  height: 500px; }
+
+.card-text:last-child {
+  width: 500px; }
+
+.egresados {
+  display: flex;
+  justify-content: space-between; }
+
+.egresados img {
+  width: 100px;
+  height: 100px;
+  border-radius: 150px; }
+
+.egresados p {
+  width: 100px; }
+
+/* MAIN CLASES*/
+.banner-clases {
+  background-image: url("../recursos/fondo mar estrella.avif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 515px;
+  background-attachment: fixed;
+  margin: 30px 0;
+  color: black;
+  display: flex;
+  justify-content: center; }
+
+.banner-clases p {
+  width: 1000px;
+  text-align: center;
+  padding: 30px; }
+
+.parrafo-banner {
+  font-size: 25px; }
+
+.box-clases {
+  box-shadow: 0 0 25px gray;
+  margin: 50px auto; }
+
+.img-size-clases {
+  width: 260px;
+  height: 100px; }
+
+.texto-justify {
+  text-align: justify; }
+
+/* MAIN ZONAS */
+.img-size-zonas {
+  width: 260px;
+  height: 100px; }
+
+.img-mapa-zonas {
+  width: 300px;
+  margin: 10px 10px; }
+
+/* MAIN GALERIA */
+.grid-area-bautismos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "foto1 foto2"  "foto3 foto4" "foto5 foto6" "foto7 foto8" "foto9 foto10" "foto11 foto12";
+  width: 300px;
+  height: 600px;
+  margin: 20px auto;
+  box-shadow: 0 0 20px gray; }
+
+.foto1 {
+  background-image: url("../recursos/bautismo1.jpg"); }
+
+.foto2 {
+  background-image: url("../recursos/bautismo2.avif"); }
+
+.foto3 {
+  background-image: url("../recursos/bautismo3.avif"); }
+
+.foto4 {
+  background-image: url("../recursos/bautismo4.jpg"); }
+
+.foto5 {
+  background-image: url("../recursos/buceadores1.avif"); }
+
+.foto6 {
+  background-image: url("../recursos/buceadores2.avif"); }
+
+.foto7 {
+  background-image: url("../recursos/buceadores3.avif"); }
+
+.foto8 {
+  background-image: url("../recursos/buceadores4.avif"); }
+
+.foto9 {
+  background-image: url("../recursos/buzo peces coral.avif"); }
+
+.foto10 {
+  background-image: url("../recursos/buzo en arrecife.jpg"); }
+
+.foto11 {
+  background-image: url("../recursos/buzo tortuga.avif"); }
+
+.foto12 {
+  background-image: url("../recursos/mujer buceando peces .avif"); }
+
+.img {
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 5px; }
+
+.img:hover {
+  transform: scale(1.2);
+  transition: 0.5s; }
+
+/* MAIN CONTACTO */
+.fondo-contacto {
+  background-image: url("../recursos/mar abierto.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
+
+.ancho-maximo {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+
+.fuente {
+  font-size: 20px;
+  font-weight: bold; }
+
+.subrayado {
+  text-decoration: underline; }
+
+input {
+  display: block; }
+
+form input {
+  width: 260px;
+  margin: 3px; }
+
+textarea {
+  width: 260px;
+  margin: 3px; }
+
+.me-interesa {
+  padding: 10px; }
+
+/* ----FOOTER--- */
+.footer {
+  min-height: 10vh;
+  background-image: url("../recursos/fondo mar corales.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.footer img {
+  width: 140px;
+  height: 130px;
+  margin: 0 15px; }
+
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  width: 160px; }
+
+.redes-sociales h3 {
+  color: blue; }
+
+.ul-footer {
+  list-style: none;
+  display: flex;
+  padding-left: 7px; }
+
+.ul-footer img {
+  width: 40px;
+  height: 40px; }
+
+.position {
+  position: fixed;
+  bottom: 80px;
+  right: 0; }
+
+.position img {
+  width: 70px;
+  height: 70px; }
+
+/* ---MEDIA QUERY--- */
+@media (min-width: 768px) {
+  /* INICIO MQ */
+  .egresados {
+    justify-content: space-around; }
+  .egresados img {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px; }
+  .egresados p {
+    width: 200px; }
+  /* CLASES MQ */
+  .banner-clases {
+    height: 300px; }
+  .section-clases {
+    display: flex; }
+  .section-clases p {
+    margin: 10px; }
+  .img-size-clases {
+    width: 350px;
+    height: 150px;
+    margin: 20px; }
+  .clases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    justify-content: center; }
+  .mapas-clases {
+    display: flex; }
+  /*ZONAS MQ */
+  .img-size-zonas {
+    width: 350px;
+    height: 150px;
+    margin: 20px; }
+  .img-mapa-zonas {
+    width: 500px;
+    margin: 20px 100px; }
+  /* GALERIA MQ */
+  .grid-area-bautismos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "foto1 foto2 foto3 foto4" "foto5 foto6 foto7 foto8" "foto9 foto10 foto11 foto12";
+    width: 800px;
+    height: 600px;
+    box-shadow: 0 0 20px gray; }
+  /* CONTACTO MQ*/
+  form {
+    align-items: center; }
+  .centrar {
+    text-align: center; }
+  /* FOOTER MQ */
+  .redes-sociales {
+    width: 500px;
+    display: flex;
+    align-items: center; }
+  .position img {
+    width: 90px;
+    height: 90px; } }
+
+@media (min-width: 1024px) {
+  .button:hover {
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    transform: scale(1.03);
+    transition: .3s; }
+  /* CLASES MQ */
+  .img-size-clases {
+    width: 450px;
+    height: 250px;
+    margin: 50px; }
+  /* ZONAS MQ */
+  .img-size-zonas {
+    width: 450px;
+    height: 250px;
+    margin: 50px; }
+  .img-mapa-zonas {
+    width: 700px;
+    margin: 50px 300px; } }
+
+@media (min-width: 1440px) {
+  /* FOOTER MQ */
+  .position {
+    right: 180px; } }
