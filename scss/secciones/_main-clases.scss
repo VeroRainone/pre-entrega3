@@ -1,0 +1,28 @@
+.banner-clases{
+    background-image: url("../recursos/fondo\ mar\ estrella.avif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 515px;
+    background-attachment: fixed;
+    margin: 30px 0;
+    color: $black;
+    display: flex;
+    justify-content: center;
+    @include tablet{
+        height: 300px;
+    }
+    p{
+        width: 1000px;
+        text-align: center;
+        padding: 30px;
+        font-size: 25px;
+    }
+}
+.box-clases{
+    box-shadow: 0 0 20px gray;
+    margin: 50px auto;
+    .card{
+        margin: 15px 0;
+    }
+}
+
