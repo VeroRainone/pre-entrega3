@@ -1,62 +1,92 @@
 .mapa-zonas{
+  display: flex;
+  justify-content: center;
+  img{
+      width: 280px;
+      margin: 20px 0;
+      box-shadow: 0 0 20px gray; ;
+      @include tablet{
+          width: 500px;
+          margin: 30px 0;
+      }    
+      @include laptop{
+          width: 700px;
+          margin: 50px 0;
+      }
+  }
+}
+.zonas-destacadas{
+  @include tablet{
+  display: flex;
+  justify-content: space-evenly;
+  }
+  .contenedor{
     display: flex;
     justify-content: center;
-    img{
-        width: 280px;
-        margin: 20px 0;
-        box-shadow: 0 0 20px gray; ;
-        @include tablet{
-            width: 500px;
-            margin: 30px 0;
-        }    
-        @include laptop{
-            width: 700px;
-            margin: 50px 0;
-        }
-    }
-}
-.section-clases{
-    border: 1px solid gray;
-}
-.img-size-zonas{
-    width: 260px;
-    height: 100px;
-}
-
-@media(min-width:768px){
-/*ZONAS MQ */
-.img-size-zonas{
-    width: 350px;
-    height: 150px;
-    margin: 20px;
-}
-
-.section-clases{
-    display: flex;
-}
-.section-clases p{
-    margin: 10px;
-}
-
-.clases{ 
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 500px;
-    justify-content: center;
-}
-// .mapas-clases{
-//     display: flex;
-// }
-
-}
-
-@media (min-width:1024px){
-
-/* ZONAS MQ */
-.img-size-zonas{
-    width: 450px;
-    height: 250px;
-    margin: 50px;
-}  
+    figure{
+      position: relative;
+      width: 300px;
+      height: 280px;
+      overflow: hidden;
+      border-radius: 6px;
+      cursor: pointer;
+      @include tablet{
+        width: 245px;
+        height: 470px;
+      }
+      @include laptop{
+        width: 450px;
+        height: 450px;
+      }
+      img{
+        height: 100%;
+        transition: all 0.5s ease-out;
+      }
+      .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 103, 123, 0.4);
+        transition: all 0.5s ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+        h2{
+          transform: translatex(-300px);
+          opacity: 0;
+          color: $white;
+          transition: all 1s ease;
+        }
+        p{
+          transform: translateX(300px);
+          opacity: 0;
+          color: $white;
+          transition: all 1s ease;
+        }
+        button{
+          transform: translateX(300px);
+          opacity: 0;
+          transition: all 1s ease;
+        }
+      }
+      &:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+      }
+      &:hover > .capa h2{
+        transform: translatex(0px);
+        opacity: 1;
+      }
+      &:hover > .capa p{
+        transform: translateX(0px);
+        opacity: 1;
+      }
+      &:hover > .capa button{
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
+  }
 }
