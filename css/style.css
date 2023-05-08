@@ -14,6 +14,11 @@
 .margin {
   margin: 15px; }
 
+.gradiente {
+  border-radius: 20px;
+  background-image: linear-gradient(blue, #60acf4, aquamarine, white);
+  padding: 15px; }
+
 .button {
   background-color: black;
   color: white;
@@ -55,10 +60,25 @@
     width: 300px; }
     @media (min-width: 768px) {
       .ancho-banner .card-text:last-child {
-        width: 380px; } }
-    @media (min-width: 1440px) {
+        width: 420px; } }
+    @media (min-width: 1024px) {
       .ancho-banner .card-text:last-child {
         width: 550px; } }
+
+.green-code {
+  margin: 50px;
+  padding: 10px;
+  background-image: radial-gradient(blue, #53a7f6, #3af3b5, white); }
+  .green-code .green-icons {
+    display: block;
+    width: 200px;
+    margin: 15px auto; }
+    @media (min-width: 768px) {
+      .green-code .green-icons {
+        width: 500px; } }
+  .green-code .button-index {
+    display: block;
+    margin: 20px auto; }
 
 .reseñas {
   display: flex;
@@ -116,9 +136,9 @@
       .mapa-zonas img {
         width: 500px;
         margin: 30px 0; } }
-    @media (min-width: 1440px) {
+    @media (min-width: 1024px) {
       .mapa-zonas img {
-        width: 700px;
+        width: 650px;
         margin: 50px 0; } }
 
 @media (min-width: 768px) {
@@ -126,29 +146,33 @@
     display: flex;
     justify-content: space-evenly; } }
 
-.zonas-destacadas .contenedor {
+.zonas-destacadas__contenedor {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .zonas-destacadas .contenedor figure {
+  .zonas-destacadas__contenedor figure {
     position: relative;
     width: 300px;
-    height: 280px;
+    height: 300px;
     overflow: hidden;
     border-radius: 6px;
     cursor: pointer; }
     @media (min-width: 768px) {
-      .zonas-destacadas .contenedor figure {
+      .zonas-destacadas__contenedor figure {
         width: 245px;
-        height: 470px; } }
-    @media (min-width: 1440px) {
-      .zonas-destacadas .contenedor figure {
-        width: 450px;
-        height: 450px; } }
-    .zonas-destacadas .contenedor figure img {
+        height: 355px; } }
+    @media (min-width: 1024px) {
+      .zonas-destacadas__contenedor figure {
+        width: 300px;
+        height: 300px; } }
+    @media (min-width: 1044px) {
+      .zonas-destacadas__contenedor figure {
+        width: 350px;
+        height: 350px; } }
+    .zonas-destacadas__contenedor figure img {
       height: 100%;
       transition: all 0.5s ease-out; }
-    .zonas-destacadas .contenedor figure .capa {
+    .zonas-destacadas__contenedor figure .capa {
       position: absolute;
       top: 0;
       width: 100%;
@@ -158,30 +182,32 @@
       opacity: 0;
       visibility: hidden;
       text-align: center; }
-      .zonas-destacadas .contenedor figure .capa h2 {
+      .zonas-destacadas__contenedor figure .capa h2 {
+        margin: 10px;
         transform: translatex(-300px);
         opacity: 0;
         color: white;
         transition: all 1s ease; }
-      .zonas-destacadas .contenedor figure .capa p {
+      .zonas-destacadas__contenedor figure .capa p {
+        margin: 20px;
         transform: translateX(300px);
         opacity: 0;
         color: white;
         transition: all 1s ease; }
-      .zonas-destacadas .contenedor figure .capa button {
+      .zonas-destacadas__contenedor figure .capa button {
         transform: translateX(300px);
         opacity: 0;
         transition: all 1s ease; }
-    .zonas-destacadas .contenedor figure:hover > .capa {
+    .zonas-destacadas__contenedor figure:hover > .capa {
       opacity: 1;
       visibility: visible; }
-    .zonas-destacadas .contenedor figure:hover > .capa h2 {
+    .zonas-destacadas__contenedor figure:hover > .capa h2 {
       transform: translatex(0px);
       opacity: 1; }
-    .zonas-destacadas .contenedor figure:hover > .capa p {
+    .zonas-destacadas__contenedor figure:hover > .capa p {
       transform: translateX(0px);
       opacity: 1; }
-    .zonas-destacadas .contenedor figure:hover > .capa button {
+    .zonas-destacadas__contenedor figure:hover > .capa button {
       transform: translateX(0px);
       opacity: 1; }
 
@@ -297,10 +323,14 @@
       .footer .redes-sociales .ul-footer img {
         width: 50px;
         height: 50px; }
-        @media (min-width: 1440px) {
-          .footer .redes-sociales .ul-footer img {
-            width: 60px;
-            height: 60px; } }
+      @media (min-width: 768px) {
+        .footer .redes-sociales .ul-footer .logo-wap {
+          width: 70px;
+          height: 70px; } }
+      @media (min-width: 1024px) {
+        .footer .redes-sociales .ul-footer .logo-wap {
+          width: 80px;
+          height: 80px; } }
       .footer .redes-sociales .ul-footer .position {
         position: fixed;
         bottom: 80px;

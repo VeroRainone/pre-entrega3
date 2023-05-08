@@ -6,11 +6,28 @@
     .card-text:last-child{
         width: 300px;
         @include tablet{
-            width: 380px;
+            width: 420px;
         }    
-        @include laptop{
+        @include notebook{
             width: 550px;
         }
+    }
+}
+.green-code{
+    margin: 50px;
+    padding: 10px;
+    background-image:radial-gradient($radial-gradient) ;
+    .green-icons{
+        display: block;
+        width: 200px;
+        margin: 15px auto;
+        @include tablet{
+            width: 500px;
+        }
+    }
+    .button-index{
+        display: block;
+        margin: 20px auto;;
     }
 }
 .reseñas{
@@ -35,8 +52,3 @@
         }
     }
 }
-// @media (min-width:1440px){
-//     .card-text:last-child{
-//         width: 550px;
-//     }
-// }    

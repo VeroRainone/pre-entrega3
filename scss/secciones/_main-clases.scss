@@ -5,7 +5,7 @@
     height: 515px;
     background-attachment: fixed;
     margin: 30px 0;
-    color: $black;
+    color: map-get($color, "black");
     display: flex;
     justify-content: center;
     @include tablet{

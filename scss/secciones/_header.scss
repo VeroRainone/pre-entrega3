@@ -13,10 +13,10 @@
     .navbar-collapse{
         flex-direction: row-reverse;
         .nav-link{
-            color: $black;
+            color: map-get($color, "black");
             font-weight: bold;
             &:hover{
-                color: $blue;
+                color: map-get($color, "blue");
             }
         }
     }

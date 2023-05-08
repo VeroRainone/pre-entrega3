@@ -9,8 +9,8 @@
           width: 500px;
           margin: 30px 0;
       }    
-      @include laptop{
-          width: 700px;
+      @include notebook{
+          width: 650px;
           margin: 50px 0;
       }
   }
@@ -20,24 +20,29 @@
   display: flex;
   justify-content: space-evenly;
   }
-  .contenedor{
+  &__contenedor{
     display: flex;
     justify-content: center;
     align-items: center;
     figure{
       position: relative;
       width: 300px;
-      height: 280px;
+      height: 300px;
       overflow: hidden;
       border-radius: 6px;
       cursor: pointer;
       @include tablet{
         width: 245px;
-        height: 470px;
+        height: 355px;
+      }
+      @include notebook{
+        width: 300px;
+        height: 300px;
       }
       @include laptop{
-        width: 450px;
-        height: 450px;
+        width: 350px;
+        height: 350px;
+      
       }
       img{
         height: 100%;
@@ -54,15 +59,17 @@
         visibility: hidden;
         text-align: center;
         h2{
+          margin: 10px;
           transform: translatex(-300px);
           opacity: 0;
-          color: $white;
+          color: map-get($color, "white");
           transition: all 1s ease;
         }
         p{
+          margin: 20px;
           transform: translateX(300px);
           opacity: 0;
-          color: $white;
+          color: map-get($color, "white");
           transition: all 1s ease;
         }
         button{
